@@ -3,31 +3,66 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Job Search - Women In Web Development</title>
+    <title>Women In Web Development - Job Board</title>
     <link rel="stylesheet" href="jobsearch.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <nav>
         <div class="logo">
-          <img src="./assets/design-assets/Logo/Nav_Logo.svg" alt="Women In Web Development Logo" />
+          <img src="./assets/design-assets/Logo/logo.png" alt="Women In Web Development Logo" />
         </div>
         <div class="nav-links">
-            <ul class="nav-ul">
-                <a href="#">About</a>
-                <a href="#">Blog</a>
-                <a href="#">Jobs</a>
-                <a href="#">Scholarships</a>
-                <a href="#">Training</a>
-                <a href="#" class="membership-link">Membership</a>
-                <a href="#">Sponsor</a>
-            </ul>
+          <a href="#">About</a>
+          <a href="#">Blog</a>
+          <a href="#">Jobs</a>
+          <a href="#">Scholarships</a>
+          <a href="#">Training</a>
+          <a href="#" class="membership-link">Membership</a>
+          <a href="#">Sponsor</a>
         </div>
       </nav>
-      <section class="job-search">
-          <h1>Job Board</h1>
-      </section>
     </header>
-    <script src="jobsearch.js"></script>
+    <section class="job-search">
+      <h1>Job Board</h1>
+      <div class="search-inputs">
+        <input type="text" id="searchInput" onkeyup="myFunction()" placeholder="Job Title, Keywords, Etc." />
+        <input type="text" id="searchInput" onkeyup="myFunction()" placeholder="Location" />
+        <div class="find-jobs">
+          <button>Find Jobs</button>
+        </div>
+        <a href="#">Remote</a>
+        <a href="#">Junior</a>
+        <a href="#">Intermediate</a>
+        <a href="#">Senior</a>
+        <a href="#">Internships</a>
+        <a href="#">Returnships</a>
+      </div>
+      <div class="featured-jobs">
+        <h2>Featured Posts</h2>
+        <div class="featured listings">
+          <ul id="myUL">
+            <li>
+              <h3>Software Engineer at Capgemini - Juniors Welcome!</h3>
+              <p><strong>Experience Level:</strong> Junior, Intermediate, Senior</p>
+              <p><strong>Salary:</strong> Experience Dependent</p>
+              <p>Full Time | Back-End | United States</p>
+              <div class="learn-more">
+                <a href="#">Learn More</a>
+              </div>
+            </li>
+            <li>
+              <h3>Lead Front End Developer at Pawlytics</h3>
+              <p><strong>Experience Level:</strong> Intermediate</p>
+              <p><strong>Salary:</strong> $48,000 - $50,000</p>
+              <p>Full Time | Front-End | Lincoln, NE, USA</p>
+              <div class="learn-more">
+                <a href="#">Learn More</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

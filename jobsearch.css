@@ -4,3 +4,29 @@
   src: url(./assets/fonts/Poppins/Poppins-Regular.ttf);
   font-weight: 400;
 }
+
+@font-face {
+  font-family: "Poppins";
+  src: url(./assets/fonts/Poppins/Poppins-SemiBold.ttf);
+  font-weight: 600;
+}
+
+/* Import Playfair Display */
+@font-face {
+  font-family: "Playfair Display";
+  src: url(./assets/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", sans-serif;
+}
